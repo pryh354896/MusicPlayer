@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="bg_commen">#f5f5f5</color>
+    <color name="bg_green">#7cb442</color>
+    <color name="bg_greener">#6fa13b</color> 
+    <color name="bg_grey">#e4e6dc</color>
+    <color name="bg_blue">#26c8da</color>
+    <color name="bg_bluer">#22b2c4</color>
+    <color name="diliver">#dcdcdc</color>
+    
+    <color name="speed">#80d22d</color>
+    <drawable name="peak">#a4d22c</drawable>
+    <color name="time">#d0a22d</color>
+    <color name="distance">#d06c2c</color>
+    
+    <color name="data_blue">#26c8da</color>
+    <drawable name="trans_half">#22b2c4</drawable>
+    
+    <color name="tranparent">#7cb442</color>
+    <color name="white">#ffffff</color>
+    <color name="title_blue">#003366</color>
+</resources>

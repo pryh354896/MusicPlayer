@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_blue"
+        >
+         <Button 
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/back_arrow"
+            android:textSize="20sp"
+            android:textColor="@color/bg_bluer"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="正在播放"
+            android:textColor="@color/bg_bluer"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="7"/>
+        <TextView   
+            android:id="@+id/home_data_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="分享"
+            android:textColor="@color/bg_bluer"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+         android:id="@+id/son_name"
+        android:layout_below="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="25dp"
+        >
+         
+        <TextView 
+            android:id="@+id/sonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_bluer"
+            android:textSize="20sp"
+            android:text="center"/>
+        </LinearLayout>
+       
+   
+   <ImageView
+            android:id="@+id/iv_album"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+           android:layout_margin="20dp"	
+            />
+   
+   <SeekBar 
+        android:id="@+id/proBar"
+        android:layout_below="@id/iv_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/player_progress_bg"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:max="100"
+        android:thumb="@drawable/media_player_progress_button"
+        />
+   
+   <TextView 
+       android:id="@+id/timeLong"
+       android:layout_below="@id/proBar"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_alignParentRight="true"
+       android:textColor="@color/bg_bluer"
+
+       />
+   
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" 
+        android:layout_below="@id/timeLong"
+        >
+       <ImageButton 
+           android:id="@+id/pre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/pre"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageButton 
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="2"
+            android:src="@drawable/play"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/next"
+            android:layout_gravity="center_vertical"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

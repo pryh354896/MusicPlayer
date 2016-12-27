@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="back">返回</string>
+    <string name="local">本地音乐</string>
+    <string name="recentplay">最近播放</string>
+    <string name="artist">歌手</string>
+    <string name="music_online">在线音乐</string>
+       
+
+</resources>
